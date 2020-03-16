@@ -1,0 +1,122 @@
+.downheader_subpage{
+	display: block;
+  position: relative;
+  overflow: visible;
+	width: 100%;
+	height: 473px;
+	background-image: url(../images/downheader-background.png);
+	background-color: #093a61;
+	border-bottom: 1px solid #f7f7f7;
+	-webkit-box-shadow: -1px 5px 14px 2px rgba(247,247,247,0.57);
+	-moz-box-shadow: -1px 5px 14px 2px rgba(247,247,247,0.57);
+	box-shadow: -1px 5px 14px 2px rgba(247,247,247,0.57);
+	.left{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    width: 40%;
+		height: 473px;
+		.tile{
+			display: block;
+	    position: relative;
+	    overflow: hidden;
+			background: #ffffff;
+			width: 514px;
+			height: 230px;
+			opacity: 0.1;
+			margin-top: 124px;
+			h3{
+				color: #ffffff;
+				font-family: 'Open Sans';
+				font-weight: 900;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 27px;
+				margin-left: 20px;
+				margin-bottom: 40px;
+				opacity: 1;
+				}
+			p{
+				color: #fff;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 26px;
+				margin-bottom: 40px;
+				width: 484px;
+				text-align:left;
+			}
+			a{
+				display: inline-block;
+				color: $blue;
+			}
+		}
+	}
+	.right{
+  	display: inline-block;
+  	position: absolute;
+  	overflow: visible;
+		width: 60%;
+		height: 473px;
+    img{
+      display: inline-block;
+			position: absolute;
+	  	overflow: visible;
+			top: -38px;
+			right: -66px;
+      width: 938px;
+      height: 500px;
+     }
+	 }
+}
+
+@media (min-width: 1366px) and (max-width: 1919px) {
+	.downheader_subpage{
+		width: 100%;
+		.right{
+			img{
+				overflow: hidden;
+				top: -20px;
+				right: -28px;
+			 }
+		 }
+	 }
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		.downheader_subpage{
+			width: 100%;
+			height: 350px;
+			.left{
+				width: 100%;
+				height: 400px;
+				.tile{
+					margin-top: 60px;
+				}
+			}
+			.right{
+				position: absolute;
+				z-index: 1;
+				img{
+					display: none;
+				 }
+		 	}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		.downheader_subpage{
+			height: 300px;
+			.left{
+				width: 100%;
+				height: 300px;
+				.tile{
+					margin-top: 30px;
+				}
+			}
+			.right{
+				display: none;
+		 }
+		}
+	}

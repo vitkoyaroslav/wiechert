@@ -1,0 +1,135 @@
+.downheader{
+	display: block;
+  position: relative;
+  overflow: visible;
+	width: 100%;
+	height: 473px;
+	background-image: url(../images/downheader-background.png);
+	background-color: #093a61;
+	.left{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    width: 40%;
+		height: 473px;
+		.tile{
+			display: block;
+	    position: relative;
+	    overflow: hidden;
+			background-color: #1c4a78;
+			width: 514px;
+			height: 230px;
+			opacity: 0.5;
+			margin-top: 124px;
+			.text{
+				display: block;
+				position: relative;
+				overflow: hidden;
+				h3{
+					color: #ffffff;
+					display: block;
+			    position: relative;
+			    overflow: hidden;
+					font-family: 'Open Sans';
+					width: 200px;
+					font-size: 28px;
+					line-height: 35px;
+					font-weight: 900;
+					margin: 40px 0 4px 40px;
+					}
+				h3:nth-child(2){
+					width: 302px;
+					margin-top: 0;
+				}
+				h3:nth-child(3){
+					width: 400px;
+					margin-top: 0;
+				}
+				p{
+					color: #ffffff;
+					display: block;
+			    position: relative;
+			    overflow: hidden;
+					font-family: 'Open Sans', sans-serif;
+					font-size:16px;
+					font-weight: 400;
+					line-height: 20px;
+					margin: 20px 0 0 40px;
+					width: 484px;
+					text-align:left;
+				}
+			}
+			a{
+				display: inline-block;
+				color: $blue;
+			}
+		}
+	}
+	.right{
+  	display: inline-block;
+  	position: absolute;
+  	overflow: visible;
+		width: 60%;
+		height: 473px;
+    img{
+      display: inline-block;
+			position: absolute;
+	  	overflow: visible;
+			top: -38px;
+			right: -66px;
+      width: 938px;
+      height: 500px;
+     }
+	 }
+}
+
+@media (min-width: 1366px) and (max-width: 1919px) {
+	.downheader{
+		width: 100%;
+		.right{
+			img{
+				overflow: hidden;
+				top: -20px;
+				right: -28px;
+			 }
+		 }
+	 }
+	}
+
+	@media (min-width: 768px) and (max-width: 1365px) {
+		.downheader{
+			width: 100%;
+			height: 350px;
+			.left{
+				width: 100%;
+				height: 400px;
+				.tile{
+					margin-top: 60px;
+				}
+			}
+			.right{
+				position: absolute;
+				z-index: 1;
+				img{
+					display: none;
+				 }
+		 	}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		.downheader{
+			height: 300px;
+			.left{
+				width: 100%;
+				height: 300px;
+				.tile{
+					margin-top: 30px;
+				}
+			}
+			.right{
+				display: none;
+		 }
+		}
+	}
